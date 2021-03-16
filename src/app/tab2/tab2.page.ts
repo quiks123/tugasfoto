@@ -1,3 +1,4 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +8,17 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  
   constructor() {}
-
+  betul : boolean
+  inp : number
+  vari = Math.floor(Math.random() * 10)
+  tebak(){
+    if(this.inp == this.vari){
+      this.betul = true
+    }
+    else{
+      this.betul = false
+    }
+  }
 }
